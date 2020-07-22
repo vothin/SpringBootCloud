@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/vothin/config-eureka-client-demo
-          searchPaths: respo
+          searchPaths: config-eureka-client-demo
           username: vothin
           password: Zero.1995
 
