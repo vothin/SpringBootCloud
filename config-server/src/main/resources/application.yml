@@ -7,10 +7,12 @@ spring:
       label: master
       server:
         git:
-          uri: https://github.com/vothin/config-eureka-client-demo
-          searchPaths: config
+#          uri: https://github.com/vothin/config-eureka-client-demo
+#          searchPaths: config
 #          username: vothin
 #          password: Zero.1995
+          uri: https://github.com/forezp/SpringcloudConfig/
+          searchPaths: respo
 
 
 server:
