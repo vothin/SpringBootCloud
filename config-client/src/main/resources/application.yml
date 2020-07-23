@@ -8,8 +8,8 @@ spring:
       label: master
       profile: dev
       uri: http://localhost:8888/
-      username: vothin
-      password: Zero.1995
+#      username: vothin
+#      password: Zero.1995
 
 
 server:
