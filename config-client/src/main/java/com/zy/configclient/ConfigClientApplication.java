@@ -15,13 +15,13 @@ public class ConfigClientApplication {
 	}
 
 
-	@Value("${data.env}")
-    String env;
+	@Value("${data}")
+    String data;
 
 
 	@RequestMapping(value = "/hi")
     public String hi() {
-	    return env;
+	    return data;
     }
 
 }
