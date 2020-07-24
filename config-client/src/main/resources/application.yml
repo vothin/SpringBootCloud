@@ -7,10 +7,16 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8888/
-#      username: vothin
-#      password: Zero.1995
+      discovery:
+        enabled: true
+        serviceId: config-server
+  #      uri: http://localhost:8888/
 
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
 server:
   port: 8881
