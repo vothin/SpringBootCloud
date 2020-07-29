@@ -11,6 +11,15 @@ spring:
         enabled: true
         serviceId: config-server
   #      uri: http://localhost:8888/
+    bus:
+      trace:
+        enabled: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 
 eureka:
@@ -20,3 +29,23 @@ eureka:
 
 server:
   port: 8881
+
+
+
+#actuator配置
+management:
+  endpoints:
+    enabled-by-default: true
+
+    web:
+      exposure:
+#        include: *
+        include: refresh,info,health
+
+      base-path: /actuator
+
+  endpoint:
+    health:
+      show-details: always
+
+
